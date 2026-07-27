@@ -9,7 +9,8 @@ def main(page: ft.Page):
     def home():
         page.clean()
         title = ft.Text(value="Rune Novel Reader", margin=25, size=24, color="#76e6a3")
-        page.add(title, ft.Text(value="Placeholder", size=16), ft.Image(src="splash_android.png"), ft.Button("Read", on_click=read))
+        image = ft.Image(src="splash_android.png", height=250)
+        page.add(title, ft.Text(value="Placeholder", size=16), image, ft.Button("Read", on_click=read))
 
     def read():
         page.clean()
